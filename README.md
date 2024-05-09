@@ -9,15 +9,3 @@ This repository contains a simple Video Management API built with Node.js using 
     <li><strong>PostgreSQL:</strong> A powerful, open-source relational database system.</li>
     <li><strong>Neon:</strong> A cloud hosting platform for PostgreSQL databases.</li>
 </ul>
-
-<h2>Setting Up</h2>
-To run the API locally, you need to have Node.js and PostgreSQL installed on your machine.
-<ol>
-<li>Clone the repository:</li>
-<!-- Copie o seguinte comando para clonar o repositório: -->
-git clone https://github.com/your-username/video-management-api.git
-<!-- Lembre-se de substituir "your-username" pelo seu nome de usuário no GitHub. -->
-
-<li>Install dependencies:</li>
-
-</ol>
