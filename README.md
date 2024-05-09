@@ -9,3 +9,15 @@ This repository contains a simple Video Management API built with Node.js using 
     <li><strong>PostgreSQL:</strong> A powerful, open-source relational database system.</li>
     <li><strong>Neon:</strong> A cloud hosting platform for PostgreSQL databases.</li>
 </ul>
+
+
+<h2>Setting Up</h2>
+To run the API locally, you need to have Node.js and PostgreSQL installed on your machine.
+
+<ol>
+    <li>Clone the repository:</li>
+    git clone https://github.com/gabrielrodoliveira/api-nodejs-fastify.git
+    <li>Install dependencies:</li>
+    cd api-nodejs-fastify
+    npm install
+</ol>
