@@ -14,4 +14,6 @@ This repository contains a simple Video Management API built with Node.js using 
 To run the API locally, you need to have Node.js and PostgreSQL installed on your machine.
 
 Clone the repository:
+<!-- Copie o seguinte comando para clonar o repositório: -->
 git clone https://github.com/your-username/video-management-api.git
+<!-- Lembre-se de substituir "your-username" pelo seu nome de usuário no GitHub. -->
