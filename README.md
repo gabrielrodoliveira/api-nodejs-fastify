@@ -29,3 +29,14 @@ To run the API locally, you need to have Node.js and PostgreSQL installed on you
     <li>Run the server:</li>
     npm start
 </ol>
+
+The server should now be running on http://localhost:3333.
+
+<h2>Endpoints</h2>
+<h3>Create a Video</h3>
+<ul style="list-style-type: circle;">
+    <li><strong>URL:</strong> /videos</li>
+    <li><strong>Method:</strong> POST</li>
+    <li><strong>Request Body:</strong> JSON object with title, description, and duration.</li>
+    <li><strong>Response:</strong> Status code 201 if successful.</li>
+</ul>
