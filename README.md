@@ -33,25 +33,11 @@ To run the API locally, you need to have Node.js and PostgreSQL installed on you
 The server should now be running on http://localhost:3333.
 
 <h2>Endpoints</h2>
-<h3>Create a Video</h3>
 <ul style="list-style-type: circle;">
-    <li><strong>URL:</strong> /videos</li>
-    <li><strong>Method:</strong> POST</li>
-    <li><strong>Request Body:</strong> JSON object with title, description, and duration.</li>
-    <li><strong>Response:</strong> Status code 201 if successful.</li>
+    <li><strong>Create a Video:</strong> URL: /videos<br>Method: POST<br>Request Body: JSON object with title, description, and duration.<br>Response: Status code 201 if successful.</li>
+    <li><strong>Get Videos:</strong> URL: /videos<br>Method: GET<br>Query Parameters: Optional search parameter to filter videos by title.<br>Response: JSON array of videos.</li>
+    <li><strong>Update a Video:</strong> URL: /videos/:id<br>Method: PUT<br>URL Parameters: id of the video to update.<br>Request Body: JSON object with title, description, and duration.<br>Response: Status code 204 if successful.</li>
+    <li><strong>Delete a Video:</strong> URL: /videos/:id<br>Method: DELETE<br>URL Parameters: id of the video to delete.<br>Response: Status code 204 if successful.</li>
 </ul>
 
-<div style="position: relative; font-family: Arial, sans-serif;">
-  <input type="text" value="https://github.com/gabrielrodoliveira/api-nodejs-fastify" id="copyInput" readonly style="width: 80%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;">
-  <button onclick="copyToClipboard()" style="position: absolute; right: 0; top: 0; padding: 10px; border: none; background-color: #4CAF50; color: white; border-radius: 5px; cursor: pointer;">Copiar</button>
-</div>
 
-<script>
-  function copyToClipboard() {
-    const copyText = document.getElementById("copyInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    alert("Link copiado: " + copyText.value);
-  }
-</script>
