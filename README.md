@@ -20,4 +20,12 @@ To run the API locally, you need to have Node.js and PostgreSQL installed on you
     <li>Install dependencies:</li>
     cd api-nodejs-fastify
     npm install
+    <li>Set up the database:</li>
+    <ul style="list-style-type: circle;">
+        <li>Ensure PostgreSQL is running.</li>
+        <li>Create a new database named nodeJs.</li>
+        <li>Update the database connection details in database-postgres.js if necessary.</li>
+    </ul>
+    <li>Run the server:</li>
+    npm start
 </ol>
