@@ -33,11 +33,42 @@ To run the API locally, you need to have Node.js and PostgreSQL installed on you
 The server should now be running on http://localhost:3333.
 
 <h2>Endpoints</h2>
+<h3>Create a Video</h3>
 <ul style="list-style-type: circle;">
-    <li><strong>Create a Video:</strong> URL: /videos<br>Method: POST<br>Request Body: JSON object with title, description, and duration.<br>Response: Status code 201 if successful.</li>
-    <li><strong>Get Videos:</strong> URL: /videos<br>Method: GET<br>Query Parameters: Optional search parameter to filter videos by title.<br>Response: JSON array of videos.</li>
-    <li><strong>Update a Video:</strong> URL: /videos/:id<br>Method: PUT<br>URL Parameters: id of the video to update.<br>Request Body: JSON object with title, description, and duration.<br>Response: Status code 204 if successful.</li>
-    <li><strong>Delete a Video:</strong> URL: /videos/:id<br>Method: DELETE<br>URL Parameters: id of the video to delete.<br>Response: Status code 204 if successful.</li>
+    <li><strong>URL:</strong> /videos</li>
+    <li><strong>Method:</strong> POST </li>
+    <li><strong>Request:</strong> JSON object with title, description, and duration.</li>
+    <li><strong>Response:</strong> Status code 201 if successful.</li>
+</ul>
+<h3>Get Videos</h3>
+<ul style="list-style-type: circle;">
+    <li><strong>URL:</strong> Status code 201 if successful.</li>
+    <li><strong>Method:</strong> GET</li>
+    <li><strong>Request:</strong> Optional search parameter to filter videos by title.</li>
+    <li><strong>Response:</strong> JSON array of videos.</li>
+</ul>
+<h3>Update a Video</h3>
+<ul style="list-style-type: circle;">
+    <li><strong>URL:</strong> /videos/:id</li>
+    <li><strong>Method:</strong> PUT</li>
+    <li><strong>Request:</strong> JSON object with title, description, and duration.</li>
+    <li><strong>Response:</strong> Status code 204 if successful.</li>
+</ul>
+<h3>Delete a Video</h3>
+<ul style="list-style-type: circle;">
+    <li><strong>URL:</strong> /videos/:id</li>
+    <li><strong>Method:</strong> DELETE</li>
+    <li><strong>Request:</strong> id of the video to delete.</li>
+    <li><strong>Response:</strong> Status code 204 if successful.</li>
 </ul>
 
+<h2>Hosting on Neon</h2>
 
+To host the PostgreSQL database on Neon, sign up for an account on the Neon website and follow their documentation to create and configure a PostgreSQL database instance.
+
+Once the database is set up on Neon:
+<ol>
+    <li>Update the database connection details in database-postgres.js with the Neon database credentials.</li>
+    <li>Ensure the API server is configured to connect to the Neon database.</li>
+    <li>Deploy the API to your preferred hosting platform, ensuring it has access to the Neon-hosted database.</li>
+</ol>
